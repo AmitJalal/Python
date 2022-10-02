@@ -23,9 +23,12 @@ output : n = 4
 
 '''
 
-''' printing stars in triangle pattern in decreasing order '''
+#########################################################################
 
 print()
+
+''' printing stars in triangle pattern in decreasing order '''
+
 row = n
 
 while row > 0:
@@ -45,10 +48,12 @@ output: n = 4
 *
 
 '''
+###########################################################################
+
+print()  # empty line for new input
 
 ''' printing nummbers in decreasing order in triangle pattern '''
 
-print()  # empty line for new input
 
 row = n
 while row > 0:
@@ -69,9 +74,11 @@ output for n = 4
 1
 
 '''
+##########################################################################
+
+print()  # print new line for  new outputs
 
 ''' printing the triangle with as many coloumns wtih the increase in row '''
-print()  # print new line for  new outputs
 
 row = 1
 while row <= n:
