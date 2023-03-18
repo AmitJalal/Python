@@ -47,8 +47,6 @@ while i <= n:
 '''
 
 
-
-
 # ================ other way of printing this pattern ================
 
 n = int(input())
@@ -78,3 +76,49 @@ while i <= n:
 
     print()
     i += 1
+
+
+# =========== star pattern ============
+
+n = int(input())
+
+i = 1
+
+while i <= n:
+
+    space = 1
+    while space <= n - i:
+        print(" ", end=" ")
+        space += 1
+
+    ele_per_row = 2*i - 1
+    stars = 1
+    while stars <= ele_per_row:
+        print("*", end=" ")
+        stars += 1
+
+    print()
+    i += 1
+
+
+'''
+  n=4
+
+          *
+        * * *
+      * * * * *
+    * * * * * * *
+
+    
+    n =8 
+
+                *
+              * * *
+            * * * * *
+          * * * * * * *
+        * * * * * * * * *
+      * * * * * * * * * * *
+    * * * * * * * * * * * * *
+  * * * * * * * * * * * * * * *
+
+'''
