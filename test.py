@@ -6,14 +6,14 @@ def life_span_macbook(list):
     return sum
 
 
-# input
-n = int(input())
-list = []
-for i in range(0, n):
-    list.append(int(input()))
+# # input
+# # n = int(input())
+# list = []
+# for i in range(0, n):
+#     list.append(int(input()))
 
-# output
-print(life_span_macbook(list))
+# # output
+# print(life_span_macbook(list))
 
 
 def special_range(s, e):
@@ -27,7 +27,22 @@ def special_range(s, e):
         print(i)
 
 
-# input
-start = int(input())
-end = int(input())
-special_range(start, end)
+# # input
+# start = int(input())
+# end = int(input())
+# special_range(start, end)
+
+# li = [1]
+# li.insert(2,3)
+# print(li[:2])
+
+
+# =========================
+
+# input with single line in python
+
+li = [int(x) for x in input().split()]
+print(li)
+
+inp = list(map(int, input().split()))
+print(inp)
