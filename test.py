@@ -41,8 +41,18 @@ def special_range(s, e):
 
 # input with single line in python
 
-li = [int(x) for x in input().split()]
-print(li)
+# li = [int(x) for x in input().split()]
+# print(li)
 
-inp = list(map(int, input().split()))
-print(inp)
+# inp = list(map(int, input().split()))
+# print(inp)
+
+# =====================================================
+# =====================================================
+
+li1 = [1, 2,3, 4, 5]
+li2 = li1
+print(li1 == li2)
+li2 = [1, 4, 5, 6, 7]
+print(li1 == li2)
+print(li1, li2)
