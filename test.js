@@ -11,6 +11,33 @@ function sum(a, b, ...args) {
 
 console.log(sum(1, 2, 3, 4, 4, 8, 9, 5, 11, 21, 32, 332, 23));
 
+
+
+// ================= Alchemy University BlockChain --> Module JS =====================
+
+// function countElements(elements) {
+//   const count = new Map();
+//   for (const ele of elements) count.set(ele, count.get(ele) + 1 || 1);
+//   return Object.fromEntries(count);
+// }
+// const elements = ["e", "k", "e", "z", "i", "z"];
+// console.log(countElements(elements));
+
+// function playerHandScore(hand) {
+//   const scores = { K: 4, Q: 3, J: 2 };
+//   let score = 0;
+//   for (letter of hand) score += scores[letter];
+//   return score;
+// }
+
+// console.log(playerHandScore("KQQ"));
+
+
+
+
+
+
+
 // let a4 = 13;
 
 // function scope() {
@@ -36,3 +63,5 @@ console.log(sum(1, 2, 3, 4, 4, 8, 9, 5, 11, 21, 32, 332, 23));
 
 // console.log(li === li2);
 // console.log(li, li2)
+
+
