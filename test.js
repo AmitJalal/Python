@@ -30,7 +30,6 @@ function playerHandScore(hand) {
 
 // console.log(playerHandScore("KQQ"));
 
-
 // ==============================================
 // ==============================================
 
@@ -65,8 +64,6 @@ function sortByMonth(events) {
 // ==================================================
 // ==================================================
 
-
-
 // const user = { name: 'bob' }
 // console.log(user && user.name);
 
@@ -84,7 +81,6 @@ The problem is, sometimes friend is undefined. When this is the case, let's retu
 // function friendName(friend) {
 //   return friend && friend.name;
 // }
-
 
 // ==================================================
 // ==================================================
@@ -114,3 +110,19 @@ The problem is, sometimes friend is undefined. When this is the case, let's retu
 
 // console.log(li === li2);
 // console.log(li, li2)
+
+const players = [
+  { id: 1, score: 5 },
+  { id: 3, score: 10 },
+  { id: 2, score: 15 },
+  { id: 0, score: 2 },
+  { id: 5, score: 4 },
+];
+function addScore(players) {
+  return players.map((player, i) => {
+    if (i < 3) player.score += 10;
+    return player;
+  });
+}
+
+// console.log(addScore(players));
