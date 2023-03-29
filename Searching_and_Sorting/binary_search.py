@@ -1,6 +1,6 @@
 # =========================
 #   My Implementation more optimized than online solns --> tried optimizing the binary search
-#   So far I have run through many testcases
+#   So far I have run my code for binary search through many testcases
 # =========================
 
 
