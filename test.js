@@ -9,9 +9,7 @@ function sum(a, b, ...args) {
   return a + b + sum;
 }
 
-console.log(sum(1, 2, 3, 4, 4, 8, 9, 5, 11, 21, 32, 332, 23));
-
-
+// console.log(sum(1, 2, 3, 4, 4, 8, 9, 5, 11, 21, 32, 332, 23));
 
 // ================= Alchemy University BlockChain --> Module JS =====================
 
@@ -33,10 +31,63 @@ function playerHandScore(hand) {
 // console.log(playerHandScore("KQQ"));
 
 
+// ==============================================
+// ==============================================
+
+const MONTHS = {
+  JAN: 1,
+  FEB: 2,
+  MAR: 3,
+  APR: 4,
+  MAY: 5,
+  JUN: 6,
+  JUL: 7,
+  AUG: 8,
+  SEP: 9,
+  OCT: 10,
+  NOV: 11,
+  DEC: 12,
+};
+
+let events = [
+  { event: "dance", month: "MAR" },
+  { event: "farmers market", month: "JUN" },
+  { event: "parade", month: "JAN" },
+];
+
+// sort events by ascending order -> O(NlogN)
+function sortByMonth(events) {
+  return events.sort((a, b) => MONTHS[a.month] - MONTHS[b.month]);
+}
+// sortByMonth(events);
+// console.log(events);
+
+// ==================================================
+// ==================================================
 
 
 
+// const user = { name: 'bob' }
+// console.log(user && user.name);
 
+// const user2 = undefined;
+// console.log(user2.name); // error
+
+// --> to continue execution of thr program and to avoid error like this
+// const user2 = undefined;
+// console.log(user2 && user2.name); // undefined
+
+/*
+The function friendName currently retrieves the name property from the friend.
+The problem is, sometimes friend is undefined. When this is the case, let's return undefined without throwing an exception.
+*/
+// function friendName(friend) {
+//   return friend && friend.name;
+// }
+
+
+// ==================================================
+// ==================================================
 
 // let a4 = 13;
 
@@ -63,5 +114,3 @@ function playerHandScore(hand) {
 
 // console.log(li === li2);
 // console.log(li, li2)
-
-
