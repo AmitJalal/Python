@@ -1,13 +1,12 @@
 # =========================
-#   My Implementation more optimized than online solns --> tried optimizing the binary search
-#   So far I have run my code for binary search with many testcases
+#   My Implementation
 # =========================
 
 
 def search_ele(list, ele):
     start = 0
     end = len(list) - 1
-    # loop_count = 0
+    
     while start < end:
         mid = (start + end) // 2
         if list[end] < ele or list[start] > ele:
@@ -22,20 +21,19 @@ def search_ele(list, ele):
             start = mid + 1
         if list[mid] > ele:
             end = mid - 1
-        # loop_count += 1
-    # print(f"loop_count: {loop_count}")
+
     return -1
 
 
 # =========================
-#   Refactored(Traditional Way) but i guess mine is faster at time compelexity
+#   Refactored(Traditional Way)
 # =========================
 
 
 def search_ele(list, ele):
     start = 0
     end = len(list) - 1
-    # loop_count = 0
+
     while start <= end:
         mid = (start + end) // 2
         if list[mid] == ele:
@@ -44,8 +42,7 @@ def search_ele(list, ele):
             start = mid + 1
         else:
             end = mid - 1
-        # loop_count += 1
-    # print(f"loop_count: {loop_count}")
+
     return -1
 
 
